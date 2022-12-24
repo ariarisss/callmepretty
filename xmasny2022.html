@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+    
+
+        header{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif, 'Mountains of Christmas', cursive;
+            min-height: 100vh;
+            background-image: url('1.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .snow, .snow2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: url(snow.png);
+            background-position: 0 0;
+            background-repeat: repeat;
+            position: absolute;
+            
+        }
+
+        .snow {
+            background-size: 50em;
+            animation:
+            animate-snow 30s linear infinite;
+        
+        }
+
+        .snow2 {
+            background-size: 30em;
+            animation:
+            animate-snow2 30s linear infinite;
+            opacity: 0.5;
+        }
+
+        .text {
+            color: #fff;
+            text-align: center;
+        }
+
+        .text h1 {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 6em;
+            text-shadow: 5px 5px 10px #111;
+        }
+
+        .text p {
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 2em;
+            color: #ff4e58
+            text-shadow: 5px 5px 10px #111;
+        }
+
+        @keyframes animate-snow {
+            100% {
+                background-position: 70em 70em;
+            }
+        }
+
+        @keyframes animate-snow2 {
+            100% {
+                background-position: 50em 0;
+            }
+        }
+
+        .container{
+            width: 100%
+            padding: 5%;
+            background-image: linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)), url(1.png);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-bar {
+            width: 100%;
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            border-radius: 80px;
+            padding: 10px 20px;
+            backdrop-filter: blur(4px) saturate(180%);
+
+        }
+
+        .search-bar input {
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 24px 20px;
+            font-size: 20px;
+            color: #530707;
+
+        }
+   
+        ::placeholder {
+            color: #530707;
+        }
+
+        .search-bar button img {
+            width: 25px;
+        
+        }
+
+        .search-bar button {
+            border: 0;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background: #F08080;
+            cursor: pointer;
+        }
+
+    
+
+    </style>
+
+</head>
+
+<header>
+    <center>
+            <div class="snow"></div>
+            <div class="snow2"></div>
+            <div class="text">
+                   <h1>MERRY CHRISTMAS</h1>
+                   <p></p>
+
+            <div class="container"></div>
+            <from action="" class="search-bar">
+            <input type="text" placeholder="your name here" name="q" id="myInput">
+            <a href="wishes.html"><button type="submit"><img src="gift-2-fill.png"</button></a>
+
+
+        </from>
+            </div>
+
+    </center>
+</header>
+
+    
+    
+</html>
